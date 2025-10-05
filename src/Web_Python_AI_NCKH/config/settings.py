@@ -102,10 +102,15 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'K14TH00003-NguyenThanhDat',  # tên database trong ảnh
+        'USER': 'postgres',                   # user bạn đang dùng trong pgAdmin
+        'PASSWORD': 'abc123',                # thay bằng mật khẩu thực tế
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
+
 
 
 # Password validation
